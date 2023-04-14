@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* preloader */
+#preloader {
+  background: black url(./img/gsnake.gif) no-repeat center center;
+  background-size: 220px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+body {
+  background: url(./img/snakeb.png);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: black; */
+}
+
+.mainHeading {
+  margin: 20px 20px;
+}
+
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background: rgba(228, 227, 227, 0.93);
+  border-radius: 5px;
+}
+
+.game-details {
+  color: rgb(246, 6, 6);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  /* 30/30 grid  */
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  background: rgb(168, 168, 214);
+}
+
+.play-board .food {
+  background: rgb(33, 246, 9);
+}
+
+.play-board .snake-head {
+  background-color: rgb(247, 5, 5);
+}
